@@ -8,6 +8,7 @@ body{
     color: white;
     background:rgb(10, 10, 10); 
 }
+
 header{
     
     background: #0f0f0f;
@@ -16,6 +17,7 @@ header{
     color: aliceblue;
     text-transform: uppercase;
 }
+
 img:hover{
     opacity: 0.4;
     transition: 400ms;
