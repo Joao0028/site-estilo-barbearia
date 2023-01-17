@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body{
+ 
+    font-size: 15px;
+    color: white;
+    background:rgb(10, 10, 10); 
+}
+header{
+    
+    background: #0f0f0f;
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+img:hover{
+    opacity: 0.4;
+    transition: 400ms;
+}
+img{
+    width: 200px;
+    border-radius: 100%;
+    border: 5px solid black;
+    text-align: center;
+}
+h2{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+h3{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+h4{
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+h6{
+    display: inline-flex;
+    border: white 1px solid;
+    margin: 30px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    border-radius: 2px;
+}
+.info{
+    text-align: center;
+}
+.produtos{
+    margin: 20px;
+    display: -webkit-inline-box;
+    text-align: center;
+}
+.produtos a{
+    text-transform: uppercase; /*transforma as letra em maiúscula*/
+    color: aliceblue;
+    font-weight: bold;/*Para a fonte ficar em negrito*/
+    font-size: 30px;/*Tamanho da letra*/
+    text-decoration: none;   /*text-decoration: none; Sem decoração */ /*text-decoration: underline red;Sublinhado vermelho *//*text-decoration: underline wavy red;   /* Sublinhado ondulado vermelho */
+    font-family: 'Dancing Script', cursiva;/*Estilo da letra*/
+    margin: 26px;
+}
+.produtos a:hover { /*A tag hover serve para que quando tocarmos na palavra selecionada mude sua apararência; neste caso as tags home, produtos, conteudo e mudar temas ficam vermelhas*/
+    color: rgb(255, 0, 0);
+}
+.inicio{
+    margin: 0 0 1em;
+}
+.principal p{
+    margin:0 0 1em;
+}
+strong{
+    color: red;
+}
+#fnal p{
+    
+    font-family: 'Dancing Script', cursiva;
+}
+#fnal{
+    text-align: center;
+    background-color: #0f0f0f;
+}
+#final{
+    width: 200px;
+}
+.mapa{
+    padding: 3em 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {/*Esta tag funciona para fazer com que quando dispositivos de ate 480px estejam na nossa página mude*/
+    body{
+        background: rgb(34, 31, 31);/*Neste exemplo quando uma tela de ate 480px esteja nesse site ela fica da cor que eu selecionei o body...*/
+    }
+    header, #fnal{
+        width: 558px;
+    }
+    h3{
+        margin: 0 0 0 190px;
+        font-size: 20px;
+    }
+    .principal p{
+        margin: 0 0 0 195px;
+        font-size: 20px;
+    }
+    h4{
+        margin: 0 0 0 175px;
+    }
+    h6{
+        margin: 0 0 0 190px;
+    } 
+}
+
+/*text-shadow: 10px 10px white; - faz com que uma sombra branca de 10px de cada lado apareça no "texto" OBs:tem como adicionar diversas no mesmo campo apenas colocando , */
+
+/*box-shadow: 10px 10px white; - faz com que uma sombra branca de 10px de cada lado apareça OBs:tem como adicionar diversas no mesmo campo apenas colocando , */
+
+/*opacyty - faz com que a cor fique mais clasra ou escura dependendo do que escolher*/
+
+/*Para fazer calculos utilizamo exemplo: "width:calc(40% - 30px +(45*30))"*/
+
+/*Para selecionar as palavras dentro de uma tag que estão "em cima" de outra utilizamos exemplo:"main > p"*/
+
+/*Para selecionar apenas o  primeiro paragrafo ao lado de uma imagem se usa "img + p{}" para selecionar todas palavras após uma imagem "img ~ p"*/
+
+/*h4:before{
+    content: "➨";
+}                      Esta tag é utilizada quando queremos colocar algum icone na frente das palavras; "Essa seta é do aplicativo Unicode"*/
+
+
+/*h4:after{ 
+    content: "✪";
+}                   Esta tag é utilizada quando queremos colocar algum icone no final das palavras; "Essa estrela é do aplicativo Unicode"*/
+
+/*Importante: line-height: - aumenta o espaço de baixo entre as linhas*/
+
+    /*IMPORTANTE: float: left; quando temos uma imagem e queremos que ao lado tenha algum texto, usamos o float*/
+    /*MUITO IMPORTANTE: quando usamos a propiedade "float", algumas palavras acabam ficando junto ou "colado" com ele, para desfazer isso, basta ir no css da propiedade em que o float puxou e e colocar a propiedade "clean:" e dentro do clean a propiedade do float ex:"clean:left"*/

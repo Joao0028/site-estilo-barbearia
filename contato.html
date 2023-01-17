@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+<body>
+    <header>
+         <div class="caixa">
+                <h1><img id="imgs" src="imageans-produtos/logossss.jpg" alt="Logo da barbearia"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Informações</a></li>
+                    <li><a href="produtos.html">Planos</a></li>
+                </ul>
+            </nav>
+         </div>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <label for="nome">Nome e Sobrenome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="exemplo@gmail.com"><!--A tag placeholder serve para deixar uma sugestão no campo como por exemplo "email@gmail.com"-->
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" required placeholder="+55 (xx) xxxxx-xxxx"><!--A tag required serve para que quando o úsuario esquecer de enviar, ou não enviar algum de seus dados, apareça que o campo é obrigatório -->
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea cols="72" rows="4" id="mensagem" placeholder="Alguma duvida ou sugestão..."></textarea>
+            </fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+
+            <fieldset  class="comoprefere">
+                <input type="radio" name="contato" value="email" id="opcao1" ><label for="opcao1">Email</label>
+
+                
+                <input type="radio" name="contato" value="telefone" id="opcao2"><label for="opcao2">Telefone</label>
+
+                
+                <input type="radio" name="contato" value="whatsapp" id="opcao3" checked><label for="opcao3">Whatsapp</label>
+            </fieldset>
+           
+           <label for="mensagensE" id="mensagensE">Gostaria de receber nossas mensagens por Email? <input type="checkbox" checked></label>
+
+           <legend id="legend2">Qual horário você prefere ser atendido?</legend>
+
+           <legend id="horario">
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </legend>
+
+            <div>
+                <table><!--Tag de tabela-->
+                <thead><!--relaciona aos titulo e inicio da tabela-->
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h - 20h</td>
+                    </tr> 
+                    <tr>
+                        <td>Quinta</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h - 18h</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>8h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>9h - 12h</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <input type="submit" id="enviar" value="Enviar Formulário" >
+        </form>
+    </main>
+
+         <footer>
+            <img class="ima" src="imageans-produtos/logossss.jpg" alt="Logo da barbearia">
+            <p class="copy">&copy;Copyrigth Barbearia  - 2023</p>
+        </footer>
+    </body>
+    </html>

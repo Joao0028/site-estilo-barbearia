@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#imgs{
+    border: 6px rgb(22, 22, 22) solid;
+    width: 200px;/*trasnforma o tamanho da imagem para o tanto de "px" escolhido*/
+    border-radius: 100%;/*faz com que a imagem arredonde modificadamente*/
+}
+body{/*Tudo do texto*/
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 8, 8);/*usada para mudar o fundo dos textos, neste caso como é usada no body, modifica o fundo da página inteira...*/
+}
+nav li{ /*Para fazer as linhas ficarem uma ao lado da outra*/
+    display: inline;
+    margin: 0 0 0 20px;
+}
+header{
+    background-color: black;
+    padding: 20px 0;
+}
+nav a{ /*Home, produtos e conteúdo*/
+    text-transform: uppercase; /*transforma as letra em maiúscula*/
+    color: aliceblue;
+    font-weight: bold;/*Para a fonte ficar em negrito*/
+    font-size: 30px;/*Tamanho da letra*/
+    text-decoration: none;   /*text-decoration: none; Sem decoração */ /*text-decoration: underline red;Sublinhado vermelho *//*text-decoration: underline wavy red;   /* Sublinhado ondulado vermelho */
+    font-family: 'Dancing Script', cursiva;/*Estilo da letra*/
+    margin: 26px;
+}
+nav{
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background: rgb(37, 37, 37);/*cor de fundo*/
+    margin: 0 14px;/*coloca 0 de margem para cima e abaixo e 14 para direita e esquerda, pórem nesse casso se colocar uma maior que 14 o campo fica desalinhado "nesse caso isolado" */
+    padding: 30px 0px;/*Neste caso esta aumentando a o tamanho da parte de cima e abaixo pra 30px, e não modificando os lados esquerdo e direito "não entendi muito para que serve o padding..."*/
+    box-sizing: border-box;/*faz com que os item fiquem um ao lado do outro*/
+    border-color:rgb(255, 255, 255);/*Cor da borda*/
+    border-width: 2px;/*"Tamanho" ou "Espessura" da borda*//*IMPORTANTE: se eu quisesse colocar ou ajustar a borda apenas ou na parte de cima colocaria: "border-top-width"*/
+    border-style: dashed;/*É o estilo da borda, neste caso são tracinhos pequenos ao lado do outro cobrindo o campo, pórem, tem como deixar uma única linha no campo usando o "solid", deixar pontinhos usando o "dotted"  */
+    border: rgb(255, 255, 255) 2px dashed  ; /*Serve para simplificar, ao invés de colocar os três acima é só colocar todos juntos na margin...*/
+    border-radius: 10px;
+}
+.produtos{
+    width: 940px;/*Aumenta o espaço do campo que fundo das  */
+    margin: 30px auto;/*Coloca 30px de margem para todos os lados automaticamente*/
+    padding: 50px 0;
+}
+.produtos h2{
+    font-family: 'Dancing Script', cursiva;/*Estilo da letra*/
+    font-size: 38px;/*Tamanho da letra*/
+    font-weight: bold;/*Para a fonte ficar em negrito*/
+    margin: 10px;/*Coloca margens ex: se colocar 30px vai para todos, se colocar 30px 20px vai ter 30 para cima e baixo e 20 esquerda e direita... */
+}
+.produto-preco{
+    font-size: 32px;/*Tamanho da letra*/
+    font-weight: bold;/*Para a fonte ficar em negrito*/
+    font-family: 'Rubik Vinyl', cursiva;/*Estilo da letra*/
+    
+}
+.produto-descricao{
+    font-family: 'Oleo Script', cursiva;/*Estilo da letra*/
+    font-size: 25px;/*Tamanho da letra*/
+    margin: 10px 0 0;/*Faz a mesma coisa que o margin-top*/
+    margin-top: 10px;/*Faz a mesma coisa que o margin...*/
+}
+.mudarfundo a{
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;/*Tamanho da letra*/
+    text-decoration: none;   /*text-decoration: none; Sem decoração */ /*text-decoration: underline red;Sublinhado vermelho *//*text-decoration: underline wavy red;   /* Sublinhado ondulado vermelho */
+    font-family: 'Dancing Script', cursiva;/*Estilo da letra*/
+    margin:10px;
+    border: white 1px solid;
+    border-radius:5px;
+    
+}
+nav a:hover { /*A tag hover serve para que quando tocarmos na palavra selecionada mude sua apararência; neste caso as tags home, produtos, conteudo e mudar temas ficam vermelhas*/
+    color: red;
+}
+.mudarfundo a:hover {/*Neste caso a tag hover faz com que o botão de mudar tema fique vermelho e apareça um traço ao meio quando é acionada*/
+    color: red;
+    text-decoration:line-through;
+}
+.produtos li:hover {
+    border: 5px solid;
+    border-color:black;
+}
+.produtos li:active {
+    border: 3px solid;
+    border-color:rgb(0, 0, 0);
+}
+.produtos li:hover h2{
+    font-size: 38px;
+}
+.produtos li:hover p{
+    font-size: 25px;
+}
+footer{
+    text-align: center;
+    background-color: black;
+}
+.ima{
+    border: 6px rgb(22, 22, 22) solid;
+    border-radius: 100%;
+    width: 210px;
+}
+.copy{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursiva;
+}
+label{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+input{
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+}
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+form label{
+    display: block;
+    margin:10px 0px;
+    font-size: 18px;
+}
+input{
+    padding: 10px 25px;
+    margin:10px 0px;
+    font-size: 15px;
+    display: block;    
+    width: 50%;
+}
+#enviar{
+    background: orange;
+    color: white;
+    padding: 15px 0;
+    width: 521px;
+    margin:15px 0px;
+    font-size: 20px;
+    border: none;/*Serve para retirar o efeito de borda do campo enviar fórmulario...*/
+    border-radius: 5px;
+    transition: 1s all;/*serve para que quando o cursor tocar no botão de enviar fórmulario ativado com o hover, ele demore 1 segundo para fazer a transição do laranja para o branco */
+    cursor: pointer;/*Na taga transition quando queremos que apenas alguma coisa mude, escrevemos apenas o elemento agora quando queremos que todos elementos mudem colocamos "all" como no de cima*/
+}
+#enviar:hover{
+    background: white;
+    color: black;
+    transform: scale(1.2);/*Serve para que quando mousse passar por cima do botão, ele aumente em 20% em todos os sentidos*/
+    /*exemplo:"transform: rotate(100deg)" serve para fazer o elemento rodar quando o cursor passar,pórem quando colocamos ele sozinho em baixo de algum que faz funções de modificar ou semelhante ele acaba excluindo e fazendo apenas ele, para que isso não aconteça, colocamos os efeitos requeridos na mesma linha. exemplo: transform: rotate(100deg) scale(1.2);*/
+}
+main form legend{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    margin: 35px 0px 10px ;
+}
+#mensagem{
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+#mensagensE{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    margin: 35px 0 5px ;
+}
+.comoprefere{
+    display: flex;
+}
+.comoprefere input{
+    cursor: pointer;
+ width: 10%;
+}
+#horario{
+    margin: 10px 0px;
+}
+option{
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+}
+select{
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+}
+#legend2{
+    margin: 35px 0px 0px;
+}
+table{
+    margin: 0px 0px 40px;
+}
+thead{
+    font-size: 21px;
+    border: 1px solid rgb(255, 255, 255);
+}
+td, th{
+    font-family: 'Lobster', cursive;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px 99px;
+}
