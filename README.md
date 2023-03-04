@@ -1,4 +1,4 @@
-# site-estilo-barbearia
+# Ladding Page de uma Barbearia
 
 1° proje com HTML e CSS
 
